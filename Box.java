@@ -20,6 +20,9 @@ public class Box {
                 inventory[i] = item;
                 break;
             }
+            if (i == inventory.length - 1) {
+                System.out.println("\nCan't add " + item + ": Box is full");
+            }
         }
     }
 
