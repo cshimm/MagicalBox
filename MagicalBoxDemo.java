@@ -17,6 +17,7 @@ public class MagicalBoxDemo {
         box.removeItem("Item1");
         box.removeItem("Item3");
         box.removeItem("Item7");
+        box.removeItem(8);
         box.removeItem("Item10");
         System.out.println("\n***************After Deletion*****************");
         box.printItems();
