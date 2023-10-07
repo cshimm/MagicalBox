@@ -1,3 +1,5 @@
+package magicalBox;
+
 interface Storage {
     public void addItem(String itemName);
     public void removeItem(String itemName);

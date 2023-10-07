@@ -1,3 +1,5 @@
+package magicalBox;
+
 public class MagicPocketDemo {
     public static void main(String[] args) {
         MagicPocket magicPocket = new MagicPocket();

@@ -1,3 +1,4 @@
+package magicalBox;
 import java.util.ArrayList;
 
 public class MagicPocket implements Storage {

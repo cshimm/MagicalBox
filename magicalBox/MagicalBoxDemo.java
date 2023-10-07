@@ -1,3 +1,5 @@
+package magicalBox;
+
 public class MagicalBoxDemo {
     public static void main(String[] args) {
         Box box = new Box(5.,5., 5.);
@@ -22,6 +24,6 @@ public class MagicalBoxDemo {
         System.out.println("\n***************After Deletion*****************");
         box.printItems();
         box.removeItem("Item99");
-        System.out.println("\nBox Volume: " + box.volume());
+        System.out.println("\ncom.example.Box Volume: " + box.volume());
     }
 }
