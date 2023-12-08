@@ -3,16 +3,23 @@ package magicalBox;
 public class MagicPocketDemo {
     public static void main(String[] args) {
         MagicPocket magicPocket = new MagicPocket();
-        magicPocket.addItem("Item1");
-        magicPocket.addItem("Item2");
-        magicPocket.addItem("Item3");
-        magicPocket.addItem("Item4");
 
-        System.out.println("\nNum items: " + magicPocket.getNumItems());
-        magicPocket.printItems();
-        magicPocket.removeItem("Item2");
-        magicPocket.removeItem(2);
-        System.out.println("\nNum items: " + magicPocket.getNumItems());
-        magicPocket.printItems();
+        int[] testValues = {10,100,1000};
+        System.out.println("Add n items");
+        for (var value:testValues) {
+            long start = System.nanoTime();
+            for (int i = 0; i < value; i++)
+                magicPocket.addItem(String.valueOf(i));
+            System.out.println("n = " + value + ": " + (System.nanoTime() - start) + " ns");
+        }
+        System.out.println();
+        System.out.println("Remove n items");
+        for (var value:testValues) {
+            long start = System.nanoTime();
+            for (int i = 0; i < value; i++)
+                magicPocket.removeItem(String.valueOf(i));
+            System.out.println("n = " + value + ": " + (System.nanoTime() - start) + " ns");
+        }
+
     }
 }
