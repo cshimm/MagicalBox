@@ -11,6 +11,8 @@ public class MagicPocketDemo {
             for (int i = 0; i < value; i++)
                 magicPocket.addItem(String.valueOf(i));
             System.out.println("n = " + value + ": " + (System.nanoTime() - start) + " ns");
+            MemoryUsageAnalyzer.PrintHeapMemoryUsage();
+            MemoryUsageAnalyzer.PrintNonHeapMemoryUsage();
         }
         System.out.println();
         System.out.println("Remove n items");
@@ -19,6 +21,8 @@ public class MagicPocketDemo {
             for (int i = 0; i < value; i++)
                 magicPocket.removeItem(String.valueOf(i));
             System.out.println("n = " + value + ": " + (System.nanoTime() - start) + " ns");
+            MemoryUsageAnalyzer.PrintHeapMemoryUsage();
+            MemoryUsageAnalyzer.PrintNonHeapMemoryUsage();
         }
 
     }
